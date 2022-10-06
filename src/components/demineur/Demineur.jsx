@@ -1,6 +1,6 @@
 import React, { useState } from "react";
+import { generateGameGrid, stateOfTheGame, verifyIfOthersAreRevealable, revealCase } from "../../business/demineurBusiness";
 import { GAME_STATE } from "../../constants/constants";
-import { generateGameGrid, revealCase, stateOfTheGame, verifyIfOthersAreRevealable } from "../../utils/demineur";
 import MyLittleCase from "./MyLittleCase";
 
 /**
