@@ -9,10 +9,10 @@ import { coordIsPresent, generateRandomNumber, getCountOfClick, isCoordOutsideRa
  */
  const getRandomInd = (tab, size) => {
     let response = null;
-    const ind1 = generateRandomNumber(1, size+1);
-    const ind2 = generateRandomNumber(1, size+1);
+    const ind1 = generateRandomNumber(1, size);
+    const ind2 = generateRandomNumber(1, size);
     if(coordIsPresent(tab, [ind1, ind2])){
-        response = getRandomInd(tab);
+        response = getRandomInd(tab, size);
     } else {
         response = [ind1, ind2];
     }
@@ -50,7 +50,7 @@ import { coordIsPresent, generateRandomNumber, getCountOfClick, isCoordOutsideRa
         })
         copy.push(ligneCopy);
         counteurDim1++;
-    })
+    });
     return copy;
 };
 

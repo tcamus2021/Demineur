@@ -12,7 +12,7 @@ const coordIsPresent = (tab, coord) => tab.some(ind => ind[0] === coord[0] && in
  * @param {int} max 
  * @returns a random number
  */
-const generateRandomNumber = (min, max) => Math.floor(Math.random() * (max - min) + min);
+const generateRandomNumber = (min, max) => Math.floor(Math.random()*(max-min+1)+min);
 
 /**
  * Convert the coordinate from game to array
